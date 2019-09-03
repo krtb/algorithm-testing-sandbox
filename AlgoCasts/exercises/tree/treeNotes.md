@@ -15,3 +15,12 @@
 # Solution Notes
 * Remove Func
   * would use `filter helper`
+  * when calling filter on array, `does NOT modify original array`
+  * EX BELOW
+
+```js
+const arr = [1,2,3]
+arr.filter(element => {
+   return element === 1; 
+});
+```
