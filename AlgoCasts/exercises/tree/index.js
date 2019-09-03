@@ -39,6 +39,10 @@ class Node {
 
 //TODO: STEP 2 BELOW
 // root prop, to refrence head of tree, the top
-class Tree {}
+class Tree {
+    constructor(){
+        this.root = null;
+    }
+}
 
 module.exports = { Tree, Node };
