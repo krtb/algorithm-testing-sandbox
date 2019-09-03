@@ -16,6 +16,7 @@
 * Remove Func
   * would use `filter helper`
   * when calling filter on array, `does NOT modify original array`
+  * Use cases: org chart for example, don't care about everyone on top
   * EX BELOW
 
 ```js

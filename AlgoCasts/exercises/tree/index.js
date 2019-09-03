@@ -39,10 +39,11 @@ class Node {
 
 //TODO: STEP 2 BELOW
 // root prop, to refrence head of tree, the top
+// when createing traversal funcs, make sure they accept every node in tree
 class Tree {
     constructor(){
         this.root = null;
     }
-}
+} 
 
 module.exports = { Tree, Node };
