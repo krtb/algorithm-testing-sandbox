@@ -7,6 +7,7 @@
    * top-bottom, level wise
    * through each level of the tree
    * even if no common parent, still go LEFT TO RIGHT
+   * Use cases: HEIRARCHAL: org chart for example, don't care about everyone on top
 
 * Depth-First Traversal
   * first top node, next left node, last first node. Depth of tree. GO DEEP.
@@ -16,7 +17,6 @@
 * Remove Func
   * would use `filter helper`
   * when calling filter on array, `does NOT modify original array`
-  * Use cases: org chart for example, don't care about everyone on top
   * EX BELOW
 
 ```js
