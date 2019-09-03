@@ -8,13 +8,24 @@
 // should initialize a 'root' property to null.
 // 3) Implement 'traverseBF' and 'traverseDF'
 // on the tree class.  Each method should accept a
-// function that gets called with each element in the tree
+// function that gets called with each   element in the tree
 
 class Node {
 //should accept an arg that gets assigned to data prop
   constructor(data){
     this.data = data;
-    this.children = [];
+    this.children = []; //every node has children array, every child can have some number
+  }
+
+  //add method, from Step 1
+  add(data){
+     // const node= new Node(data) //create a new node that takes in data
+      this.children.push(new Node(data)); //push that node to our array
+  }
+
+  //remove: need to iterate through a list of records
+  remove(data){
+       
   }
 
 }
