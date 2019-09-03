@@ -11,3 +11,7 @@
 * Depth-First Traversal
   * first top node, next left node, last first node. Depth of tree. GO DEEP.
   *  try to get to bottom of tree as quickly as possible
+
+# Solution Notes
+* Remove Func
+  * would use `filter helper`
