@@ -25,7 +25,13 @@ class Node {
 
   //remove: need to iterate through a list of records
   remove(data){
-       
+      //because doesn't modifu original array, would re-assign
+       this.children = this.children.filter(node => {
+           //for every node in array, do a check
+           // if return true, want to keep, false to remove
+           // this is why we used (!==) falsey operator
+            return node.data !== data;
+       });
   }
 
 }
