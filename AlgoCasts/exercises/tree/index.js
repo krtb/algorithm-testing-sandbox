@@ -10,6 +10,7 @@
 // on the tree class.  Each method should accept a
 // function that gets called with each   element in the tree
 
+//TODO: STEP 1 BELOW:
 class Node {
 //should accept an arg that gets assigned to data prop
   constructor(data){
@@ -35,7 +36,9 @@ class Node {
   }
 
 }
- 
+
+//TODO: STEP 2 BELOW
+// root prop, to refrence head of tree, the top
 class Tree {}
 
 module.exports = { Tree, Node };
