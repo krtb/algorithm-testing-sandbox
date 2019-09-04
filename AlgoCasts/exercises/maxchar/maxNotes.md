@@ -38,3 +38,19 @@
 
     chars;
 ```
+
+### Alternate Version
+
+```js
+    const string = "Hello there!"
+    const chars = {};
+
+    //FOR-OF LOOP
+    for (let char of string) {
+        // if NULL and FALSEY, set as 1 with OR statement
+        
+        chars[char] = chars[char] + 1 || 1
+    }
+
+    chars;
+```
