@@ -70,6 +70,8 @@ class Tree {
 
         while (arr.length) {
             const node = arr.shift() // take the FIRST ELEMENT out of the array
+            //then take that nodes children and add to FRONT of array
+            arr.unshift(...node.children)
         }
     }
 } 
