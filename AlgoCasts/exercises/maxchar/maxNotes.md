@@ -18,12 +18,23 @@
   * number of times that that element has been found
 
 # Example
+* can condense if/else to ternary or boolean logic
 ```js
     const string = "Hello there!"
     const chars = {};
 
     //FOR-OF LOOP
     for (let char of string) {
-
+        //returns refrence to particular value
+        if(!chars[char]){
+            //if nothing exists in object, set value to 1
+            chars[char] = 1;
+        } else {
+            //assume already a number inside, 
+            //increment by 1
+            chars[char]++;
+        }
     }
+
+    chars;
 ```
