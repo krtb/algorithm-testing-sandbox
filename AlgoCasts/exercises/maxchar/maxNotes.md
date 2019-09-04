@@ -16,3 +16,14 @@
   * chars from string
 * values
   * number of times that that element has been found
+
+# Example
+```js
+    const string = "Hello there!"
+    const chars = {};
+
+    //FOR-OF LOOP
+    for (let char of string) {
+
+    }
+```
