@@ -50,9 +50,10 @@ class Tree {
         //will give us some element within our root node, inside an array
         const arr = [this.root]
 
-        //while-loop, works as long as array has something in it
+        //while-loop, works as long as array has something in it, is TRUTHY
         while (arr.length) {
-
+            //remove first element out of array, with shift() method
+            const node = arr.shift()
         }
     }
 } 
