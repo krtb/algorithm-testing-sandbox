@@ -49,6 +49,11 @@ class Tree {
     traverseBF(fn) {
         //will give us some element within our root node, inside an array
         const arr = [this.root]
+
+        //while-loop, works as long as array has something in it
+        while (arr.length) {
+
+        }
     }
 } 
 
