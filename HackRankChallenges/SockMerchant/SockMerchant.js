@@ -6,7 +6,10 @@ function sockMerchant(n, ar) {
     //variable would hold final count of amount of pairs, starts at 0
     let pairs = 0;
 
+    //since comparing items side by side, make a full stop at last index
     for( let i = 0; i < n - 1; ++1 ){
-
+        if (holdSortedSocks[i] === holdSortedSocks[i] + 1 ){
+            pairs++ //increment the pairs value if we find a match
+        }
     }
 }
