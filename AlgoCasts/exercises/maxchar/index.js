@@ -26,7 +26,7 @@ function maxChar(str) {
         if(charMap[char] > max){
             // if element greater than this character, new max value
             max = charMap[char]
-            maxChar = char
+            maxChar = char //char is diff letters added to object
         } else {
 
         }
