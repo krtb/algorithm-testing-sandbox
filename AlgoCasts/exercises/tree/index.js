@@ -56,7 +56,7 @@ class Tree {
             const node = arr.shift()
             //then take all node's children and push them into our array
             // CAN'T do node.children, would create a nested array
-            arr.push()
+            arr.push(...node.children)
         }
     }
 } 
