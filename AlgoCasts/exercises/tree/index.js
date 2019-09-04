@@ -44,6 +44,11 @@ class Tree {
     constructor(){
         this.root = null;
     }
+
+    // add BREADTH-FIRST METHOD
+    traverseBF(fn) {
+
+    }
 } 
 
 module.exports = { Tree, Node };
