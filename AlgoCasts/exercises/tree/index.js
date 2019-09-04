@@ -65,7 +65,9 @@ class Tree {
         }
     }
 
+    traverseDF(fn) {
 
+    }
 } 
 
 module.exports = { Tree, Node };
