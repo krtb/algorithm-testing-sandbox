@@ -47,7 +47,8 @@ class Tree {
 
     // add BREADTH-FIRST METHOD
     traverseBF(fn) {
-
+        //will give us some element within our root node, inside an array
+        const arr = [this.root]
     }
 } 
 
