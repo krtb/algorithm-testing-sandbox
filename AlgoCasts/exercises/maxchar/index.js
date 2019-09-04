@@ -7,7 +7,7 @@
 
 function maxChar(str) {
     //empty object will hold our data
-    let charMap = {};
+    const charMap = {};
     let max = 0;
     let maxChar = '';
 
@@ -27,11 +27,9 @@ function maxChar(str) {
             // if element greater than this character, new max value
             max = charMap[char]
             maxChar = char //char is diff letters added to object
-        } else {
-
         }
     }
+    return maxChar;
 }
-maxChar();
 
 module.exports = maxChar;
