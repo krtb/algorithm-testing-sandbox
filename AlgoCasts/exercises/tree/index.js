@@ -58,6 +58,9 @@ class Tree {
             // CAN'T do node.children, would create a nested array
             // use spread operator to take all elements out, and push them into the array
             arr.push(...node.children) //TODO:For-loop, would have been more code!!!
+
+            //take node AND pass in to our iterator func
+            fn(node)
         }
     }
 } 
