@@ -5,4 +5,8 @@ function sockMerchant(n, ar) {
     let holdSortedSocks = arr.sort((a, b) => a - b);
     //variable would hold final count of amount of pairs, starts at 0
     let pairs = 0;
+
+    for( let i = 0; i < n - 1; ++1 ){
+
+    }
 }
