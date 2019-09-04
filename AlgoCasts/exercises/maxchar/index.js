@@ -8,10 +8,30 @@
 function maxChar(str) {
     //empty object will hold our data
     let charMap = {};
+    let max = 0;
+    let maxChar = '';
 
+    //FOR-OF, iterating through any iterable object. Array, string, etc.
     for(let char of str){
-        
+        if(!charMap[char]){
+            charMap[char] = 1
+        } else {
+            charMap[char]++
+        }
+    }
+    //console.log(charMap)
+
+    //FOR-IN for objects
+    for(let char in charMap) {
+        if(charMap[char] > max){
+            // if element greater than this character, new max value
+            max = charMap[char]
+            maxChar = char
+        } else {
+
+        }
     }
 }
+maxChar();
 
 module.exports = maxChar;
