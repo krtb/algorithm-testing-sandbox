@@ -56,7 +56,8 @@ class Tree {
             const node = arr.shift()
             //then take all node's children and push them into our array
             // CAN'T do node.children, would create a nested array
-            arr.push(...node.children)
+            // use spread operator to take all elements out, and push them into the array
+            arr.push(...node.children) //TODO:For-loop, would have been more code!!!
         }
     }
 } 
