@@ -55,6 +55,7 @@ class Tree {
             //remove first element out of array, with shift() method
             const node = arr.shift()
             //then take all node's children and push them into our array
+            // CAN'T do node.children, would create a nested array
             arr.push()
         }
     }
