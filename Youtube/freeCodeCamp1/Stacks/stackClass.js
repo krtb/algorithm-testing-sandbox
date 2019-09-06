@@ -40,3 +40,8 @@ myStack.push(2);
 console.log(myStack.peek()); // 2
 console.log(myStack.pop()); // 2
 console.log(myStack.peek()); // 1
+myStack.push("kurtbauer"); // 2
+console.log(myStack.size()); // 2
+console.log(myStack.peek()); // 1
+console.log(myStack.pop()); // 1
+console.log(myStack.peek()); // 1
