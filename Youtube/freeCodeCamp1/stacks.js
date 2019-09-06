@@ -8,7 +8,7 @@
 
 var letters = []; // Here is our STACK
 
-var word = "racecar"; 
+var word = "kurt"; 
 
 var reversedWord = "";
 
@@ -17,7 +17,7 @@ var reversedWord = "";
 for(let i = 0; i < word.length; i++){
     letters.push(word[i]); //push each letter of our [word] at index [i], go through every letter
     console.log(letters)
-}
+} 
 
 //TODO: 2) pop off the stack in reverse order
 for(let i = 0; i < word.length; i++){
@@ -25,4 +25,12 @@ for(let i = 0; i < word.length; i++){
     // where put in order
     // will be popped off in reverse order 
     console.log(reversedWord)
+}
+
+//TODO: 3) ADD IF/ELSE TO CHECK IF PALINDROME
+
+if(word === reversedWord) {
+    console.log(word + " is a palindrome.")
+} else {
+    console.log(word + " is NOT a palindrome.")
 }
