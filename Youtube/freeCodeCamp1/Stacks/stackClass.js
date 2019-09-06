@@ -21,4 +21,22 @@ let Stack = function(){
         delete this.storage[this.count]; // delete: removes prop from object
         return result; // result that we stores before deleting
     }
+
+    this.size = function(){
+        return this.count; // number of items in the stack
+    }
+
+    // returns value at the end of the stack
+    // does not remove the item  
+    this.peek = function(){
+        return this.storage[this.count-1]
+    }
 }
+
+var myStack = new Stack(); 
+
+myStack.push(1);
+myStack.push(2);
+console.log(myStack.peek()); // 2
+console.log(myStack.pop()); // 2
+console.log(myStack.peek()); // 1
