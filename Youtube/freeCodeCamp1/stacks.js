@@ -9,3 +9,6 @@ var word = "racecar";
 var reversedWord = "";
 
 //put letters of word into stack
+for(let i = 0; i < word.length; i++){
+    
+}
