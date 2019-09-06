@@ -34,5 +34,6 @@ function mySet(){
             index = collection.indexOf(element) // find index of that element
             collection.splice(index, 1) // remove that specific element, starting at index and UP TO 1
         }
+        return false // if element not in collection
     }
 }
