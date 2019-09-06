@@ -8,8 +8,31 @@
 function mySet(){
     let collection = []; // collection will hold the set
 
-    // checks for presence of element, returns true/false
+    // method checks for presence of element, returns true/false
     this.has = function(element) {
         return (collection.indexOf(element) !== -1) // if falsey won't return
+    }
+
+    // method returns all values in the set
+    this.values = function() {
+        return collection;
+    }
+
+    // method adds element to set
+    this.add = function(element) {
+        if(!this.has(element)){
+            // if it doesn't have the element, can add it
+            collection.push(element);
+            return true;
+        }
+        return false; 
+    }
+ 
+    // method to remove an element
+    this.remove = function(element) {
+        if(this.has(element)){
+            index = collection.indexOf(element) // find index of that element
+            collection.splice(index, 1) // remove that specific element, starting at index and UP TO 1
+        }
     }
 }
