@@ -7,4 +7,9 @@
 
 function mySet(){
     let collection = []; // collection will hold the set
+
+    // checks for presence of element, returns true/false
+    this.has = function(element) {
+        return (collection.indexOf(element) !== -1) // if falsey won't return
+    }
 }
