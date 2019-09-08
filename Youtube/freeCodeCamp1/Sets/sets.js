@@ -28,12 +28,30 @@ function mySet(){
         return false; 
     }
  
-    // method to remove an element
+    // method to remove an element || DELETE in ES6
     this.remove = function(element) {
         if(this.has(element)){
             index = collection.indexOf(element) // find index of that element
             collection.splice(index, 1) // remove that specific element, starting at index and UP TO 1
         }
         return false // if element not in collection
+    }
+
+    //RETURN the size of the collection || PROP in ES6 set, when calling it not going to put parans after
+    this.size = function() {
+        return collection.length;
+    }
+
+    //------------METHODS ABOVE IN ES6 implementation of set--------------//
+
+    //returns UNION of two sets
+    this.union = function(otherSet) {
+        let unionSet = new Set();
+        let firstSet = this.values();
+
+        //FOR-EACH runs once for each array element.
+        firstSet.forEach(){
+            
+        }
     }
 }
