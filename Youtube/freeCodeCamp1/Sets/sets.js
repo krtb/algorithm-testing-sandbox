@@ -47,12 +47,17 @@ function mySet(){
     //returns UNION of two sets
     // cal union on original and pass in other set
     this.union = function(otherSet) {
-        let unionSet = new Set();
-        let firstSet = this.values(); // just returning the collaction
+        let unionSet = new mySet();
+        let firstSet = this.values(); // just returning the collection
+        let secondSet = otherSet.values()  
 
         //FOR-EACH runs once for each array element.
-        firstSet.forEach(){
-
-        }
+        firstSet.forEach(function(e){
+            unionSet.add(e); // to add the value
+        })
+        secondSet.forEach(function(e){
+            unionSet.add(e); //union set won't contain duplicates
+        })
+        return unionSet
     }
 }
