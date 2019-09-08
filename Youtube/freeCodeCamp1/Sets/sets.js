@@ -64,7 +64,7 @@ function mySet(){
     // this method will return the intersection of two sets as a new set
     this.intersection = function(otherSet) {
         let intersectionSet = new mySet(); // create new set
-        let firstSet = this.values(); // get all values in fiest set
+        let firstSet = this.values(); // get all values in frst set
 
         firstSet.forEach(function(e){
             if(otherSet.has(e)){
