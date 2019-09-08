@@ -67,11 +67,12 @@ function mySet(){
         let firstSet = this.values(); // get all values in frst set
 
         firstSet.forEach(function(e){
+            //check if other set has the value  
             if(otherSet.has(e)){
                 intersectionSet.add(e)
             };
         });
-        return intersectionSet;
+        return intersectionSet; // ALL THE ITEMS THAT ARE IN BOTH SETS
     };
 
     //this method will return the difference of two sets as a new set
