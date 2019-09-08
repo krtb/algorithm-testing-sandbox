@@ -45,13 +45,14 @@ function mySet(){
     //------------METHODS ABOVE IN ES6 implementation of set--------------//
 
     //returns UNION of two sets
+    // cal union on original and pass in other set
     this.union = function(otherSet) {
         let unionSet = new Set();
-        let firstSet = this.values();
+        let firstSet = this.values(); // just returning the collaction
 
         //FOR-EACH runs once for each array element.
         firstSet.forEach(){
-            
+
         }
     }
 }
