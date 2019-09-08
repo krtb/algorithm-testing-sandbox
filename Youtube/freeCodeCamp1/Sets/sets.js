@@ -58,6 +58,6 @@ function mySet(){
         secondSet.forEach(function(e){
             unionSet.add(e); //union set won't contain duplicates
         })
-        return unionSet
+        return unionSet // order doesn't matter, don't need in particular order
     }
 }
