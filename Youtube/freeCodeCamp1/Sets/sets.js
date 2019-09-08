@@ -60,4 +60,30 @@ function mySet(){
         })
         return unionSet // order doesn't matter, don't need in particular order
     }
-}
+
+    // this method will return the intersection of two sets as a new set
+    this.intersection = function(otherSet) {
+        let intersectionSet = new mySet(); // create new set
+        let firstSet = this.values(); // get all values in fiest set
+
+        firstSet.forEach(function(e){
+            if(otherSet.has(e)){
+                intersectionSet.add(e)
+            };
+        });
+        return intersectionSet;
+    };
+
+    //this method will return the difference of two sets as a new set
+
+    this.difference = function(otherSet) {
+        let differenceSet = new mySet();
+        var firstSet = this.values();
+
+        firstSet.forEach(function(e){
+            if(!otherSet.has(e)){
+                difference.add(e)
+            };
+        });
+    };
+} ;
