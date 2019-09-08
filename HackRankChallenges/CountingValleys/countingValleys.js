@@ -1,16 +1,13 @@
+// n = steps
+// s =  string to symbolize path traveresed
+
 function countingValleys(n, s) {
-    //n = number of steps in Gary's hike
-    // s = string of n chracters that describe Gary's path
-    let numberOfValleys = 0;
-    let currentLevel = 0; // start at 0 for regulat path, -1 when in valley, +1 when climbing mountain
-    let d;
-    
-    for(d in s){
-        if(d === 'U'){
-            currentLevel += 1
-        } else {
-            currentLevel -= 1
-        }
-    }
-    return numberOfValleys
+  //create two values, one for altitude and one to hold count of number of valleys
+ let h = 0;
+ let count = 0;
+
+ for( let i = 0; i < n; i++ ){
+     if()
+ }
+
 }
