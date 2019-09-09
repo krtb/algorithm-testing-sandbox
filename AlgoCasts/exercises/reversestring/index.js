@@ -18,7 +18,6 @@ function reverse(str) {
     for (let character of str) {
         // everytime we loop, will be adding it on the the empty string, initially
         reversed = character + reversed;
-        debugger;
     } 
     return reversed
 }
