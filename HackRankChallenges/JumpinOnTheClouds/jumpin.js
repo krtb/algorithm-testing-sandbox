@@ -1,4 +1,4 @@
-var c = [0, 1, 0, 0, 0, 1, 0]
+var c = [0, 1, 0, 0, 0, 1, 0] // 6 || 4
 
 function jumpingOnClouds(c) {
     let count = 1; // count min number of jumps
@@ -7,7 +7,8 @@ function jumpingOnClouds(c) {
     //while loop to iterate through array of clouds
     // easier to add by 1 than with a for loop
     while(true){
-        if( i + 2 < c.length && c[i+2] == 0){
+        if( i + 2 < c.length && c[i+2]  == 0){
+            console.log(c[i], c[i+2], 'one', count, i)
             // check if 2 positions away or 0 
             i += 2
         } else if (i + 1 < c.length) {
@@ -21,7 +22,6 @@ function jumpingOnClouds(c) {
         count++; // incremented by 1 to record that a move was made
     }
     console.log(count);
-    
 }
 
 jumpingOnClouds(c)
