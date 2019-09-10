@@ -43,6 +43,8 @@ let str = 'coolbeans'
 function reverseString(str){
     let reversed = ''; // setup var to hold string
 
+    //IF looping over every 2nd element in array, use WHILE loop/ classic FOR 
+
     for(let char of str){
         reversed = char + reversed //adding each CHAR to START of string reversed
     }
