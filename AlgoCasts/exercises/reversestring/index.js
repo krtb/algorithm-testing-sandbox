@@ -18,14 +18,19 @@
 let str = 'coolbeans'
 
 //TODO: SOLUTION 1
-function reverseString(str) {
-    const arr = str.split('') // convert STR to ARRAY of CHARS
-    //console.log(arr) 
-    let reversedStr = arr.reverse() // method that reverses CHARS in ARR
-    //console.log(reversedStr);
-    let joinedStr = reversedStr.join('') // turn ARR into str
-    //console.log(joinedStr);
-    return joinedStr
-}
+// function reverseString(str) {
+//     const arr = str.split('') // convert STR to ARRAY of CHARS
+//     //console.log(arr) 
+//     let reversedStr = arr.reverse() // method that reverses CHARS in ARR
+//     //console.log(reversedStr);
+//     let joinedStr = reversedStr.join('') // turn ARR into str
+//     //console.log(joinedStr);
+//     return joinedStr
+// }
 
-//reverseString(str)
+// TODO: CLEARN SOLUTION 1
+// function reverseString(str) {
+//     console.log(str.split('').reverse().join(''));
+// }
+
+// reverseString(str)

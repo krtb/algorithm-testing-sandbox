@@ -10,7 +10,7 @@ str = "coolbeans"
 
 # printToScreen(str)
 
-#TODO: SOLUTION ONE
+#TODO: SOLUTION 1
 def reverseString(str)
    turn_to_array = str.split('') # split CHARS into ARR
    # print turn_to_array
@@ -20,4 +20,9 @@ def reverseString(str)
    puts turn_to_string
 end
 
-reverseString(str)
+#TODO: CLEARN SOLUTION 1
+# def reverseString(str)
+#    puts str.split('').reverse().join('')
+# end
+
+# reverseString(str)
