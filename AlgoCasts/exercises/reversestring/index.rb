@@ -20,7 +20,7 @@ str = "coolbeans"
 #    puts turn_to_string
 # end
 
-#TODO: CLEARN SOLUTION 1
+#TODO: CLEAN SOLUTION 1
 # def reverseString(str)
 #    puts str.split('').reverse().join('')
 # end
