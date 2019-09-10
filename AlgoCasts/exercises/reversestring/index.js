@@ -40,17 +40,17 @@ let str = 'coolbeans'
 // - RETURN the VAR reversed
 
 //TODO: SOLUTION 2
-function reverseString(str){
-    let reversed = ''; // setup var to hold string
+// function reverseString(str){
+//     let reversed = ''; // setup var to hold string
 
-    //IF looping over every 2nd element in array, use WHILE loop/ classic FOR 
+//     //IF looping over every 2nd element in array, use WHILE loop/ classic FOR 
 
-    for(let char of str){
-        reversed = char + reversed //adding each CHAR to START of string reversed
-    }
+//     for(let char of str){
+//         reversed = char + reversed //adding each CHAR to START of string reversed
+//     }
 
-    console.log(reversed);
-    //return reversed
-}
+//     console.log(reversed);
+//     //return reversed
+// }
 
 reverseString(str)
