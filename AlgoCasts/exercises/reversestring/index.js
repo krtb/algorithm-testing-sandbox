@@ -44,7 +44,7 @@ function reverseString(str){
     let reversed = ''; // setup var to hold string
 
     for(let char of str){
-        reversed = char + reversed
+        reversed = char + reversed //adding each CHAR to START of string reversed
     }
 
     console.log(reversed);
