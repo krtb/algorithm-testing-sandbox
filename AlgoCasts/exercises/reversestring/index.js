@@ -41,7 +41,14 @@ let str = 'coolbeans'
 
 //TODO: SOLUTION 2
 function reverseString(str){
+    let reversed = ''; // setup var to hold string
 
+    for(let char of str){
+        reversed = char + reversed
+    }
+
+    console.log(reversed);
+    //return reversed
 }
 
-// reverseString(str)
+reverseString(str)
