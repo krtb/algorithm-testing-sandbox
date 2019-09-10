@@ -28,9 +28,20 @@ let str = 'coolbeans'
 //     return joinedStr
 // }
 
-// TODO: CLEARN SOLUTION 1
+// TODO: CLEAN SOLUTION 1
 // function reverseString(str) {
 //     console.log(str.split('').reverse().join(''));
 // }
+
+//STEPS
+// - create an empty string called 'reversed'
+// - for each CHAR in STR
+//   - take string and add to start of reversed
+// - RETURN the VAR reversed
+
+//TODO: SOLUTION 2
+function reverseString(str){
+
+}
 
 // reverseString(str)
