@@ -67,4 +67,6 @@ function reverseString(str) {
     console.log(myAnswer);
 }
 
+//DEBUGGING: node inspect index.js // repl // call your function
+
 reverseString(str)
