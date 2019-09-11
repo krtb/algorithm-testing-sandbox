@@ -18,20 +18,20 @@
 let str = 'coolbeans'
 
 //TODO: SOLUTION 1
-// function reverseString(str) {
-//     const arr = str.split('') // convert STR to ARRAY of CHARS
-//     //console.log(arr) 
-//     let reversedStr = arr.reverse() // method that reverses CHARS in ARR
-//     //console.log(reversedStr);
-//     let joinedStr = reversedStr.join('') // turn ARR into str
-//     //console.log(joinedStr);
-//     return joinedStr
-// }
+function reverseString(str) {
+    const arr = str.split('') // convert STR to ARRAY of CHARS
+    //console.log(arr) 
+    let reversedStr = arr.reverse() // method that reverses CHARS in ARR
+    //console.log(reversedStr);
+    let joinedStr = reversedStr.join('') // turn ARR into str
+    //console.log(joinedStr);
+    return joinedStr
+}
 
 // TODO: CLEAN SOLUTION 1
-// function reverseString(str) {
-//     console.log(str.split('').reverse().join(''));
-// }
+function reverseString(str) {
+    console.log(str.split('').reverse().join(''));
+}
 
 //STEPS
 // - create an empty string called 'reversed'
@@ -40,18 +40,18 @@ let str = 'coolbeans'
 // - RETURN the VAR reversed
 
 //TODO: SOLUTION 2
-// function reverseString(str){
-//     let reversed = ''; // setup var to hold string
+function reverseString(str){
+    let reversed = ''; // setup var to hold string
 
-//     //IF looping over every 2nd element in array, use WHILE loop/ classic FOR 
+    //IF looping over every 2nd element in array, use WHILE loop/ classic FOR 
 
-//     for(let char of str){
-//         reversed = char + reversed //adding each CHAR to START of string reversed
-//     }
+    for(let char of str){
+        reversed = char + reversed //adding each CHAR to START of string reversed
+    }
 
-//     console.log(reversed);
-//     //return reversed
-// }
+    console.log(reversed);
+    //return reversed
+}
 
 //TODO: SOLUTION 3, uses array helper
 function reverseString(str) {
