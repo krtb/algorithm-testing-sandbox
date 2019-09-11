@@ -10,18 +10,25 @@
 let str = "lol"
 
 //TODO: my solution
-function palindrome(str) {
-    // return TRUE/FALSE, not a reversed string
-    // srt = "abba"
-    let turnToArray = str.split('')
-    let reverseString = turnToArray.reverse()
-    let mutateBackToString = reverseString.join("")
+// function palindrome(str) {
+//     // return TRUE/FALSE, not a reversed string
+//     // srt = "abba"
+//     let turnToArray = str.split('')
+//     let reverseString = turnToArray.reverse()
+//     let mutateBackToString = reverseString.join("")
 
-    if (mutateBackToString == str){
-        console.log(true)
-    } else {
-        console.log(false)
-    }
+//     if (mutateBackToString == str){
+//         console.log(true)
+//     } else {
+//         console.log(false)
+//     }
+// }
+
+//TODO: CLEANER SOLUTION 1
+function palindrome(str) {
+    let reversed = str.split('').reverse().join('')
+    //console.log(reversed === str);
+    return reversed === str
 }
 
 palindrome(str)
