@@ -7,13 +7,23 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-let str = "kurt"
+let str = "lol"
 
+//TODO: my solution
 function palindrome(str) {
     // return TRUE/FALSE, not a reversed string
     // srt = "abba"
-    let reversedWord = str.reverse()
-    debugger
+    let turnToArray = str.split('')
+    let reverseString = turnToArray.reverse()
+    let mutateBackToString = reverseString.join("")
+
+    if (mutateBackToString == str){
+        console.log(true)
+    } else {
+        console.log(false)
+    }
 }
+
+palindrome(str)
 
 module.exports = palindrome;
