@@ -12,15 +12,22 @@
 // - toString()
 //    - turn numbers to strings
 // - Math.sign()
-//    - returns 1 if positive, -1 if negative
+//    - returns 1 if positive, -1 if negative, 0 if 0
 // parseInt()
-//    - converts string to number
+//    - converts string to number, without decimals or specical characters, also NAN if not a number
 let n = -12345
 
 function reverseInt(n) {
-    let stringedNumber = n.toString()
-    console.log(stringedNumber);
-    
+    let reversedNumber = n.toString().split('').reverse().join('')
+    let cleanNumber = parseInt(reversedNumber)
+
+    if(n > 0){
+        console.log(cleanNumber);
+    } else {
+        console.log(cleanNumber * -1 )
+    }
+
+    //console.log(cleanNumber);    
 }
 
 reverseInt(n)
