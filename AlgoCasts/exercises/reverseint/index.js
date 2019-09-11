@@ -8,6 +8,21 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-function reverseInt(n) {}
+//TODO: NOTES
+// - toString()
+//    - turn numbers to strings
+// - Math.sign()
+//    - returns 1 if positive, -1 if negative
+// parseInt()
+//    - converts string to number
+let n = -12345
+
+function reverseInt(n) {
+    let stringedNumber = n.toString()
+    console.log(stringedNumber);
+    
+}
+
+reverseInt(n)
 
 module.exports = reverseInt;
