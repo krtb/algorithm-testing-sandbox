@@ -53,4 +53,18 @@ let str = 'coolbeans'
 //     //return reversed
 // }
 
+//TODO: SOLUTION 3, uses array helper
+function reverseString(str) {
+    // takes all different values within an array, REDUCES to one singular value
+    // FIRST ARG = arrow function
+    // SECOND ARG = starting initial VAL for our FUNC
+    let myAnswer = str.split('').reduce((reversed_string, character)=>{
+        return character + reversed_string
+    }, '');
+    // - take starting arg
+    // - pass into arrow func as first arg
+    // - what gets returned will be used as starting point for each successive function
+    console.log(myAnswer);
+}
+
 reverseString(str)
