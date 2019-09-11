@@ -10,19 +10,19 @@
 let str = "lol"
 
 //TODO: my solution
-// function palindrome(str) {
-//     // return TRUE/FALSE, not a reversed string
-//     // srt = "abba"
-//     let turnToArray = str.split('')
-//     let reverseString = turnToArray.reverse()
-//     let mutateBackToString = reverseString.join("")
+function palindrome(str) {
+    // return TRUE/FALSE, not a reversed string
+    // srt = "abba"
+    let turnToArray = str.split('')
+    let reverseString = turnToArray.reverse()
+    let mutateBackToString = reverseString.join("")
 
-//     if (mutateBackToString == str){
-//         console.log(true)
-//     } else {
-//         console.log(false)
-//     }
-// }
+    if (mutateBackToString == str){
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}
 
 //TODO: CLEANER SOLUTION 1
 function palindrome(str) {
@@ -30,6 +30,16 @@ function palindrome(str) {
     //console.log(reversed === str);
     return reversed === str
 }
+
+//TODO: use EVERY array method. ARRAYS, tests if every element in array pass test passed by callback func
+function palindrome(str) {
+    let reversed = str.split('').every((character, i)=>{
+        // str.length - i, make sure that we decrement through every character in the array
+        // -1, to make sure that we start at the end of the array
+        return character === str[str.length - i - 1]
+    })    
+}
+
 
 palindrome(str)
 
