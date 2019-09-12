@@ -8,14 +8,20 @@
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
+//TODO: NOTES
+// create series of smaller array
+// second number being passed in specifies how many numbers should go into each array
+
 function chunk(array, size) {
     //1) create new array
     const chunked = [];
     //2) iterate through original array of elements
     for (let element of array ) {
     //3) get last elememt inside our chunked array
-        const last =  chunked[chunked.length - 1] //get last element
-        console.log(last);
+
+        //STILL AN ARRAY BECAUSE AT NO TIME ARE YOU MUTATING THE DATA TYPE
+        const last =  chunked[chunked.length - 1] // LENGTH OF THE ARRAY - 1 =  you end up on the right side
+        //console.log(last);
         
         if (!last || last.length === size){
             //push new chunk into chunked with current element
@@ -24,8 +30,10 @@ function chunk(array, size) {
             last.push(element)
         }
     }
-
-    return chunked;
+    console.log(chunked)
+    //return chunked;
 }
+
+chunk([1,2,3,4,5], 2)
 
 module.exports = chunk;
