@@ -42,16 +42,44 @@ let str = "Hello"
 
 // --------- REFACTOR 1 --------- //
 
+// 1 - sanitize data to be alphanumeric
+
+// function charCount(str) {
+//     let obj = {};
+
+//     for(let i = 0; i < str.length; i++){
+//         let char = str[i].toLowerCase()
+
+//         if(/[a-z0-9]/.test(char)){
+//             // sanitize data to only include ALPHA-NUMERIC
+//             //.test() method = tests for a match in a string
+//             if(obj[char] > 0){
+//                 obj[char]++
+//             } else {
+//                 obj[char] = 1
+//             }
+//         }
+
+//     }
+//     console.log(obj)
+// }
+
+
+//------- REFACTOR 2 -----------//
+
+// 1 - for loop first creates variable for number, THEN loops
+//   - easier to use FOR OF loop
+
 function charCount(str) {
     let obj = {};
 
-    for(let i = 0; i < str.length; i++){
-        let char = str[i].toLowerCase()
+    for(let char of str) {
+        char = char.toLowerCase()
 
-        if(/[a-z0-9]/.test(char)){
+        if (/[a-z0-9]/.test(char)) {
             // sanitize data to only include ALPHA-NUMERIC
             //.test() method = tests for a match in a string
-            if(obj[char] > 0){
+            if (obj[char] > 0) {
                 obj[char]++
             } else {
                 obj[char] = 1
@@ -63,4 +91,3 @@ function charCount(str) {
 }
 
 charCount(str)
-
