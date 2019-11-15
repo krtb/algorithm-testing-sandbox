@@ -20,16 +20,16 @@ function charCount(str){
     for(let i = 0; i < str.length; i++){
         let char = str[i].toLowerCase()
 
-      //if CHAR is a number/character && is key in object, add 1 to count
         if (result[char] > 0){
+        //if CHAR is a number/character && is key in object, add 1 to count
         //if already a key in object
             result[char]++
         } else {
+        //if CHAR is a number/letter && not in object, add it and set value to 1
         //not already key in object
             result[char] = 1
         }
 
-      //if CHAR is a number/letter && not in object, add it and set value to 1
       //if CHAR is something else, don't do anything
     }
 
