@@ -76,7 +76,7 @@ function charCount(str) {
     for(let char of str) {
         char = char.toLowerCase()
 
-        if (/[a-z0-9]/.test(char)) {
+        if (isAlphaNumeric(char)) {
             // sanitize data to only include ALPHA-NUMERIC
             //.test() method = tests for a match in a string
             
@@ -87,6 +87,8 @@ function charCount(str) {
     }
     console.log(obj)
 }
+
+charCount(str)
 
 // ---------- REFACTOR 3 --------- //
 
@@ -101,5 +103,3 @@ function isAlphaNumeric(char){
     }
     return true
 }
-
-charCount(str)
