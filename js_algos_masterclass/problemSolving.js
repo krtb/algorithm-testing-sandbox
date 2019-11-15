@@ -13,29 +13,54 @@
 
 let str = "Hello"
 
-function charCount(str){
-    //make object to return at end
-    let result = {};
-    //loop over string, forEach character
+// function charCount(str){
+//     //make object to return at end
+//     let result = {};
+//     //loop over string, forEach character
+//     for(let i = 0; i < str.length; i++){
+//         let char = str[i].toLowerCase()
+
+//         if (result[char] > 0){
+//         //if CHAR is a number/character && is key in object, add 1 to count
+//         //if already a key in object
+//             result[char]++
+//         } else {
+//         //if CHAR is a number/letter && not in object, add it and set value to 1
+//         //not already key in object
+//             result[char] = 1
+//         }
+
+//       //if CHAR is something else, don't do anything
+//     }
+
+
+//     // return object at end
+//     console.log(result)
+// }
+
+// charCount(str)
+
+// --------- REFACTOR 1 --------- //
+
+function charCount(str) {
+    let obj = {};
+
     for(let i = 0; i < str.length; i++){
         let char = str[i].toLowerCase()
 
-        if (result[char] > 0){
-        //if CHAR is a number/character && is key in object, add 1 to count
-        //if already a key in object
-            result[char]++
-        } else {
-        //if CHAR is a number/letter && not in object, add it and set value to 1
-        //not already key in object
-            result[char] = 1
+        if(/[a-z0-9]/.test(char)){
+            // sanitize data to only include ALPHA-NUMERIC
+            //.test() method = tests for a match in a string
+            if(obj[char] > 0){
+                obj[char]++
+            } else {
+                obj[char] = 1
+            }
         }
 
-      //if CHAR is something else, don't do anything
     }
-
-
-    // return object at end
-    console.log(result)
+    console.log(obj)
 }
 
 charCount(str)
+
