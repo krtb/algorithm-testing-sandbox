@@ -74,9 +74,9 @@ function charCount(str) {
     let obj = {};
 
     for(let char of str) {
-        char = char.toLowerCase()
-
         if (isAlphaNumeric(char)) {
+            char = char.toLowerCase()
+
             // sanitize data to only include ALPHA-NUMERIC
             //.test() method = tests for a match in a string
             
