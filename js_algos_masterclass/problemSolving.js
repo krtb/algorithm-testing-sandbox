@@ -79,11 +79,9 @@ function charCount(str) {
         if (/[a-z0-9]/.test(char)) {
             // sanitize data to only include ALPHA-NUMERIC
             //.test() method = tests for a match in a string
-            if (obj[char] > 0) {
-                obj[char]++
-            } else {
-                obj[char] = 1
-            }
+            
+            //if truthy, add 1, else set value to 1
+            obj[char] = ++obj[char] || 1;
         }
 
     }
