@@ -9,7 +9,14 @@
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
 function chunk(array, size) {
+    // ITERATE THROUGH ARRAY
+    let newArrayContainer = [];
 
+    // SLICE/ CUT OUT BASED ON (SIZE) variable
+    for(let i = 0; i < array.length; i++){
+        
+    }
+    // RETURN NEW ARRAY
 }
 
 chunk([1,2,3,4,5], 2)
